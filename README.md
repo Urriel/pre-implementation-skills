@@ -9,6 +9,14 @@ scoping → musk-filter → [HUMAN OK] → irmpew-m-interrogate → w-real-code-
          \________________ orchestrator ________________/
 ```
 
+## Based on
+
+This skill chain is **based on** the IRMPEW framing from:
+
+**[IRMPEW: Intent, Requirements, Model, Plan, Evaluation, Workflow](https://arxiv.org/abs/2609.12039)** ([arXiv:2609.12039](https://arxiv.org/abs/2609.12039))
+
+We operationalize the letter map (especially **R + M + E** for implementation frames) as agent skills, then add upstream scoping, Musk 1–3 deletion, a human gate, and real-code verification of **E**. That is an adaptation for day-to-day agent workflows, not a replacement for the paper.
+
 ## Why this exists
 
 Common failure modes before (and during) implementation:
@@ -52,7 +60,7 @@ After `musk-filter`, the orchestrator **stops**. A human must review `MUSK-LOG.m
 ## Design notes
 
 - **Musk 1–3 before IRMPEW framing** — delete first; do not polish requirements you should not have.
-- **IRMPEW** — Intent / Requirements / Model / Plan / Evaluation / Workflow ([arXiv:2609.12039](https://arxiv.org/abs/2609.12039); letter map under `irmpew-m-interrogate/references/`). Frames for coding should carry **R + M + E**.
+- **IRMPEW** — based on the paper above; letter map under `irmpew-m-interrogate/references/`. Frames for coding should carry **R + M + E**.
 - **W here means real-code verify** — not “write a plan”; prove the evaluation criteria on the actual system.
 
 ## License
