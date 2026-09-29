@@ -52,7 +52,7 @@ After `musk-filter`, the orchestrator **stops**. A human must review `MUSK-LOG.m
 ## Design notes
 
 - **Musk 1–3 before IRMPEW framing** — delete first; do not polish requirements you should not have.
-- **IRMPEW** — Intent / Requirements / Model / Plan / Evaluation / Workflow (see letter map under `irmpew-m-interrogate/references/`). Frames for coding should carry **R + M + E**.
+- **IRMPEW** — Intent / Requirements / Model / Plan / Evaluation / Workflow ([arXiv:2609.12039](https://arxiv.org/abs/2609.12039); letter map under `irmpew-m-interrogate/references/`). Frames for coding should carry **R + M + E**.
 - **W here means real-code verify** — not “write a plan”; prove the evaluation criteria on the actual system.
 
 ## License
